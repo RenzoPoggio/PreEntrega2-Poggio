@@ -428,6 +428,9 @@ footer{
     h1{
         font-size: 45px;
     }
+    h2{
+        font-size: 38px;
+    }
     .main-text{
         font-size: 30px;
     }
@@ -460,6 +463,51 @@ footer{
     .quotes-text{
         width: unset;
         font-size: 26px;
+    }
+    #containerGrid{
+        grid-template-areas: 
+            "secfirstgrid secfirstgrid secfirstgrid secfirstgrid secfirstgrid secfirstgrid"
+            "secsecondgrid secsecondgrid secsecondgrid secsecondgrid secsecondgrid secsecondgrid"
+            "elMadrilenioFrameSt elMadrilenioFrameSt elMadrilenioFrameSt elMadrilenioFrameSt elMadrilenioFrameSt elMadrilenioFrameSt"
+            "firstStatsNumbers firstStatsNumbers firstStatsNumbers firstStatsNumbers firstStatsNumbers firstStatsNumbers"
+            "secondStatsNumbers secondStatsNumbers secondStatsNumbers secondStatsNumbers secondStatsNumbers secondStatsNumbers"
+            "thirdStatsNumbers thirdStatsNumbers thirdStatsNumbers thirdStatsNumbers thirdStatsNumbers thirdStatsNumbers"
+            "albumIdolo albumIdolo albumIdolo albumIdolo albumIdolo albumIdolo"
+            "idoloFrameSt idoloFrameSt idoloFrameSt idoloFrameSt idoloFrameSt idoloFrameSt"
+        ;
+        margin-top: 15px;
+        row-gap: 20px;
+        column-gap: unset;
+        text-align: center;
+    }
+    #secFirstGrid{
+        padding: 0px 20px;
+    }
+    #secSecondGrid {
+        margin-bottom: 30px;
+    }
+    .popular-albums {
+        margin: 25px 0px 25px 0px;
+    }
+    .madrilenio-album-txt {
+        margin-top: 15px;
+    }
+    #elMadrilenioFrameSt iframe{
+        width: 100%;
+        height: 75vh;
+    }
+    #elMadrilenioFrameSt{
+        margin-bottom: 20px;
+        padding: 0px 20px;
+    }
+    #albumIdolo{
+        margin-top: 18px;
+        padding: 0px 20px;
+    }
+    #idoloFrameSt iframe{
+        width: 100%;
+        height: 75vh;
+        padding: 0px 20px;
     }
     footer{
         flex-direction: column;
