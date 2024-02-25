@@ -370,7 +370,7 @@ table tr th{
 }
 
 .txt-icons-contact{
-    margin-left: 20px;
+    margin:0px 0px 0px 15px;
 }
 
 form{
@@ -515,6 +515,9 @@ footer{
         height: 75vh;
         padding: 0px 20px;
     }
+    #titlePhotoGallery{
+        margin: 40px 0px 30px 20px;
+    }
     table{
         width: 100vw;
     }
@@ -546,6 +549,19 @@ footer{
     }
     .row h1{
         margin-top: unset;
+    }
+    #newinShopTitle {
+        margin: 40px 0px 0px 20px;
+    }
+    #contactUs{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    #contactUsMainInfo {
+        width: 100%;
+    }
+    #cont-form {
+        width: 100%;
     }
     footer{
         flex-direction: column;
