@@ -1,0 +1,11 @@
+{
+  "name": "web-ctangana-coderhouse",
+  "version": "1.0.0",
+  "description": "Proyecto realizado para el curso de **Desarrollo Web de Coderhouse**\r Temas utilizados:\r - HTML\r * CSS\r + BOOTSTRAP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

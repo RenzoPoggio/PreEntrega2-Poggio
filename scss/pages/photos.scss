@@ -1,0 +1,31 @@
+#titlePhotoGallery{
+    margin: 50px 0px 30px 20px;
+}
+
+.gallery-slider-1{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    .gslider-track{
+        display: flex;
+        animation: scroll 40s linear infinite;
+        -webkit-animation: scroll 40s linear infinite;
+        width: calc(375px * 14);
+        .slide-photo{
+            width: 375px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+@keyframes scroll {
+    0% {
+        -webkit-transoform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transoform:translateX(calc(-375px * 7));
+        transform: translateX(calc(-375px * 7));
+    }
+}

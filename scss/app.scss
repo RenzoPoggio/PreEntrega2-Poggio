@@ -1,0 +1,17 @@
+// General
+@import './general/variables.scss';
+@import './general/reset.scss';
+@import './general/fonts.scss';
+@import './layout/body.scss';
+
+//Layout
+@import './layout/footer.scss';
+@import './layout/header.scss';
+
+//Pages
+@import './pages/contact.scss';
+@import './pages/discography.scss';
+@import './pages/history.scss';
+@import './pages/index.scss';
+@import './pages/photos.scss';
+@import './pages/shop.scss';

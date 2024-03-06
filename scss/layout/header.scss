@@ -1,0 +1,16 @@
+header{
+   display: unset;
+   .navbar-collapse{
+    flex-grow: unset;
+        .nav-link{
+            color: $secondary-color !important;
+            font-size: 20px;
+            padding-right: 20px !important;
+            padding-left: 20px !important;
+            &:hover{
+                color: $primary-color !important;
+            }
+        }
+    }
+   
+}

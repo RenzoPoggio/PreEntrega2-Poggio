@@ -1,0 +1,32 @@
+#newinShopTitle{
+    margin: 50px 0px 0px 20px;
+}
+
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .products-shop{
+        color: $third-color;
+        border-radius: 14px;
+        padding: 20px;
+        width: 400px;
+        .title-product{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .price-product{
+            margin-bottom: 30px;
+        }
+        .btn-buy-product{
+            text-decoration: none;
+            background-color: $primary-color;
+            color: $secondary-color;
+            padding: 12px 24px;
+            border-radius: 8px;
+            &:hover{
+                background-color: #9D0303;
+            }
+        }
+    }
+}

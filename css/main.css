@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Dirtyline";
+  src: url("../resources/font/Dirtyline 36daysoftype 2022.ttf");
+}
+#titleMain {
+  font-family: "Dirtyline";
+  font-size: 128px;
+  color: #FF0606;
+  font-weight: 400;
+  margin: auto;
+}
+
+h1 {
+  color: #FF0606;
+  font-family: "Dirtyline";
+  font-size: 76px;
+  font-weight: 400;
+}
+
+h2 {
+  color: #FF0606;
+  font-family: "Dirtyline";
+  font-size: 58px;
+  font-weight: 400;
+}
+
+.simple-text {
+  font-size: 20px;
+}
+
+.main-text {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.quotes-text {
+  margin: auto;
+  font-size: 42px;
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+  width: 80%;
+}
+
+body {
+  background-color: #FAF5EB;
+  color: #000000 !important;
+  font-family: "Work Sans", sans-serif;
+}
+body .bg-body-tertiary {
+  background-color: #000000 !important;
+}
+
+/*FOOTER*/
+footer {
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: black;
+  padding: 30px 50px;
+  font-size: 20px;
+  justify-content: space-between;
+}
+footer #socialMediaIconsCont {
+  display: flex;
+  align-items: center;
+}
+footer #socialMediaIconsCont .socialmedia-icons {
+  margin: 0px 10px;
+}
+
+header {
+  display: unset;
+}
+header .navbar-collapse {
+  flex-grow: unset;
+}
+header .navbar-collapse .nav-link {
+  color: #FFFFFF !important;
+  font-size: 20px;
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+}
+header .navbar-collapse .nav-link:hover {
+  color: #FF0606 !important;
+}
+
+#contactUs {
+  padding: 0px 20px;
+  margin-top: 50px;
+  display: flex;
+}
+#contactUs #contactUsMainInfo {
+  width: 50vw;
+}
+#contactUs #contactUsMainInfo .icons-contact {
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+}
+#contactUs #contactUsMainInfo .icons-contact .txt-icons-contact {
+  margin: 0px 0px 0px 15px;
+}
+#contactUs #contForm {
+  width: 50vw;
+}
+#contactUs #contForm form {
+  display: flex;
+  flex-direction: column;
+}
+#contactUs #contForm .contact-label {
+  border: #FFFFFF;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 18px;
+  margin: 10px 0px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#contactUs #contForm #btnSendForm {
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #FF0606;
+  color: #FFFFFF;
+  border: #FFFFFF;
+  margin: 10px 0px;
+}
+#contactUs #contForm #btnSendForm:hover {
+  background-color: #9D0303;
+  cursor: pointer;
+}
+
+#homeMain {
+  background-image: url("../resources/images/ctangana-imgprincipal-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  display: flex;
+}
+
+#aboutTheArtist {
+  margin-top: 80px;
+  display: flex;
+  padding: 0px 20px;
+  column-gap: 110px;
+}
+#aboutTheArtist .ctangana-yacht {
+  margin-top: 20px;
+  width: 100%;
+}
+
+#topHits {
+  margin-top: 60px;
+  padding: 0px 20px;
+}
+#topHits .top-hits-imgs {
+  margin-bottom: 80px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 200px;
+}
+#topHits .top-hits-imgs .cont-top-hits {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+#topHits .top-hits-imgs .cont-top-hits:hover .txt-img-top-hits {
+  visibility: visible;
+}
+#topHits .top-hits-imgs .cont-top-hits .border-img-tophits {
+  border: 2px dashed #FF0606;
+}
+#topHits .top-hits-imgs .cont-top-hits .txt-img-top-hits {
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(173, 28, 28, 0.3);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  color: #FFFFFF;
+  visibility: hidden;
+}
+#topHits .top-hits-imgs .cont-top-hits .txt-img-top-hits .txt-img-top-hits-margin {
+  margin-bottom: 51px;
+}
+
+#titlePhotoGallery {
+  margin: 50px 0px 30px 20px;
+}
+
+.gallery-slider-1 {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.gallery-slider-1 .gslider-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: 5250px;
+}
+.gallery-slider-1 .gslider-track .slide-photo {
+  width: 375px;
+}
+.gallery-slider-1 .gslider-track .slide-photo img {
+  width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transoform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transoform: translateX(-2625px);
+    transform: translateX(-2625px);
+  }
+}
+#newinShopTitle {
+  margin: 50px 0px 0px 20px;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.products-container .products-shop {
+  color: #000000;
+  border-radius: 14px;
+  padding: 20px;
+  width: 400px;
+}
+.products-container .products-shop .title-product {
+  font-size: 20px;
+  font-weight: 700;
+}
+.products-container .products-shop .price-product {
+  margin-bottom: 30px;
+}
+.products-container .products-shop .btn-buy-product {
+  text-decoration: none;
+  background-color: #FF0606;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+.products-container .products-shop .btn-buy-product:hover {
+  background-color: #9D0303;
+}
+
+/*# sourceMappingURL=main.css.map */
