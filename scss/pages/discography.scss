@@ -1,0 +1,59 @@
+#containerGrid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "secfirstgrid secfirstgrid secfirstgrid secsecondgrid secsecondgrid secsecondgrid"
+        "elMadrilenioFrameSt elMadrilenioFrameSt elMadrilenioFrameSt firstStatsNumbers secondStatsNumbers thirdStatsNumbers"
+        "albumIdolo albumIdolo albumIdolo idoloFrameSt idoloFrameSt idoloFrameSt"
+    ;
+    row-gap: 100px;
+    column-gap: 20px;
+    align-items: center;
+    margin-top: 22px;
+    #secFirstGrid{
+        grid-area: secfirstgrid;
+        padding: 0px 20px;
+        .popular-albums{
+            margin: 25px 0px 80px 0px;
+        }
+        .madrilenio-album-txt{
+            margin-top: 30px;
+        }
+    }
+    #secSecondGrid{
+        grid-area: secsecondgrid;
+        img{
+            width: 100%;
+        }
+    }
+    #elMadrilenioFrameSt{
+        grid-area: elMadrilenioFrameSt;
+        padding: 0px 20px;
+    }
+    #firstStatsNumbers{
+        grid-area: firstStatsNumbers;
+        text-align: center;
+    }
+    #secondStatsNumbers{
+        grid-area: secondStatsNumbers;
+        text-align: center;
+    }
+    #thirdStatsNumbers{
+        grid-area: thirdStatsNumbers;
+        text-align: center;
+    }
+    #albumIdolo{
+        grid-area: albumIdolo;
+        padding: 0px 20px;
+    }
+    #idoloFrameSt{
+        grid-area: idoloFrameSt;
+    }
+}
+
+
+
+
+
+
