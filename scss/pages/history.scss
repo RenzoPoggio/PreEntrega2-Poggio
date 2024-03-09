@@ -1,7 +1,13 @@
 #historyContGridBoos{
     padding: 0px 8px;
+    @include media-query-mobile(){
+        margin-top: 40px;
+    }
     .row h1{
         margin-top: 50px;
+        @include media-query-mobile(){
+            margin-top: unset;
+        }
     }
 }
 
@@ -13,18 +19,42 @@
 table{
     width: 60vw;
     margin: auto;
-    tr th{
-        padding: 30px 30px;
-        height: 70px;
+    @include media-query-mobile(){
+        width: 100vw;
+    }
+    tr{
+        @include media-query-mobile(){
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px 20px;
+            justify-content: center;
+        }
+        th{
+            padding: 30px 30px;
+            height: 70px;
+            @include media-query-mobile(){
+                padding: unset;
+            height: unset;
+            }
+        }
     }
     .year-history{
         font-size: 38px;
         font-weight: 800;
+        @include media-query-mobile(){
+            width: 70vw;
+            text-align: center;
+            margin-top: 25px;
+        }
     }
     .table-txt-history{
         font-size: 18px;
         font-weight: 400;
         text-align: left;
+        @include media-query-mobile(){
+            margin-top: 20px;
+            text-align: center;
+        }
     }
 }
 

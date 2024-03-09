@@ -14,12 +14,22 @@
   font-weight: 400;
   margin: auto;
 }
+@media (max-width: 480px) {
+  #titleMain {
+    font-size: 64px;
+  }
+}
 
 h1 {
   color: #FF0606;
   font-family: "Dirtyline";
   font-size: 76px;
   font-weight: 400;
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 45px;
+  }
 }
 
 h2 {
@@ -28,15 +38,30 @@ h2 {
   font-size: 58px;
   font-weight: 400;
 }
+@media (max-width: 480px) {
+  h2 {
+    font-size: 38px;
+  }
+}
 
 .simple-text {
   font-size: 20px;
+}
+@media (max-width: 480px) {
+  .simple-text {
+    font-size: 16px;
+  }
 }
 
 .main-text {
   text-transform: uppercase;
   font-size: 50px;
   font-weight: 800;
+}
+@media (max-width: 480px) {
+  .main-text {
+    font-size: 30px;
+  }
 }
 
 .quotes-text {
@@ -46,6 +71,12 @@ h2 {
   font-weight: 400;
   font-style: italic;
   width: 80%;
+}
+@media (max-width: 480px) {
+  .quotes-text {
+    width: unset;
+    font-size: 26px;
+  }
 }
 
 body {
@@ -67,6 +98,14 @@ footer {
   padding: 30px 50px;
   font-size: 20px;
   justify-content: space-between;
+}
+@media (max-width: 480px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+  }
 }
 footer #socialMediaIconsCont {
   display: flex;
@@ -97,8 +136,19 @@ header .navbar-collapse .nav-link:hover {
   margin-top: 50px;
   display: flex;
 }
+@media (max-width: 480px) {
+  #contactUs {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+}
 #contactUs #contactUsMainInfo {
   width: 50vw;
+}
+@media (max-width: 480px) {
+  #contactUs #contactUsMainInfo {
+    width: 100%;
+  }
 }
 #contactUs #contactUsMainInfo .icons-contact {
   margin: 20px 0px;
@@ -110,6 +160,11 @@ header .navbar-collapse .nav-link:hover {
 }
 #contactUs #contForm {
   width: 50vw;
+}
+@media (max-width: 480px) {
+  #contactUs #contForm {
+    width: 100%;
+  }
 }
 #contactUs #contForm form {
   display: flex;
@@ -147,6 +202,14 @@ header .navbar-collapse .nav-link:hover {
   align-items: center;
   margin-top: 22px;
 }
+@media (max-width: 480px) {
+  #containerGrid {
+    grid-template-areas: "secfirstgrid secfirstgrid secfirstgrid secfirstgrid secfirstgrid secfirstgrid" "secsecondgrid secsecondgrid secsecondgrid secsecondgrid secsecondgrid secsecondgrid" "elMadrilenioFrameSt elMadrilenioFrameSt elMadrilenioFrameSt elMadrilenioFrameSt elMadrilenioFrameSt elMadrilenioFrameSt" "firstStatsNumbers firstStatsNumbers firstStatsNumbers firstStatsNumbers firstStatsNumbers firstStatsNumbers" "secondStatsNumbers secondStatsNumbers secondStatsNumbers secondStatsNumbers secondStatsNumbers secondStatsNumbers" "thirdStatsNumbers thirdStatsNumbers thirdStatsNumbers thirdStatsNumbers thirdStatsNumbers thirdStatsNumbers" "albumIdolo albumIdolo albumIdolo albumIdolo albumIdolo albumIdolo" "idoloFrameSt idoloFrameSt idoloFrameSt idoloFrameSt idoloFrameSt idoloFrameSt";
+    margin-top: 15px;
+    row-gap: 20px;
+    column-gap: unset;
+  }
+}
 #containerGrid #secFirstGrid {
   grid-area: secfirstgrid;
   padding: 0px 20px;
@@ -154,11 +217,26 @@ header .navbar-collapse .nav-link:hover {
 #containerGrid #secFirstGrid .popular-albums {
   margin: 25px 0px 80px 0px;
 }
+@media (max-width: 480px) {
+  #containerGrid #secFirstGrid .popular-albums {
+    margin: 25px 0px 25px 0px;
+  }
+}
 #containerGrid #secFirstGrid .madrilenio-album-txt {
   margin-top: 30px;
 }
+@media (max-width: 480px) {
+  #containerGrid #secFirstGrid .madrilenio-album-txt {
+    margin-top: 15px;
+  }
+}
 #containerGrid #secSecondGrid {
   grid-area: secsecondgrid;
+}
+@media (max-width: 480px) {
+  #containerGrid #secSecondGrid {
+    margin-bottom: 30px;
+  }
 }
 #containerGrid #secSecondGrid img {
   width: 100%;
@@ -166,6 +244,17 @@ header .navbar-collapse .nav-link:hover {
 #containerGrid #elMadrilenioFrameSt {
   grid-area: elMadrilenioFrameSt;
   padding: 0px 20px;
+}
+@media (max-width: 480px) {
+  #containerGrid #elMadrilenioFrameSt {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  #containerGrid #elMadrilenioFrameSt iframe {
+    width: 100%;
+    height: 75vh;
+  }
 }
 #containerGrid #firstStatsNumbers {
   grid-area: firstStatsNumbers;
@@ -183,15 +272,37 @@ header .navbar-collapse .nav-link:hover {
   grid-area: albumIdolo;
   padding: 0px 20px;
 }
+@media (max-width: 480px) {
+  #containerGrid #albumIdolo {
+    margin-top: 18px;
+  }
+}
 #containerGrid #idoloFrameSt {
   grid-area: idoloFrameSt;
+}
+@media (max-width: 480px) {
+  #containerGrid #idoloFrameSt iframe {
+    width: 100%;
+    height: 75vh;
+    padding: 0px 20px;
+  }
 }
 
 #historyContGridBoos {
   padding: 0px 8px;
 }
+@media (max-width: 480px) {
+  #historyContGridBoos {
+    margin-top: 40px;
+  }
+}
 #historyContGridBoos .row h1 {
   margin-top: 50px;
+}
+@media (max-width: 480px) {
+  #historyContGridBoos .row h1 {
+    margin-top: unset;
+  }
 }
 
 #ctanganaWCat {
@@ -203,18 +314,50 @@ table {
   width: 60vw;
   margin: auto;
 }
+@media (max-width: 480px) {
+  table {
+    width: 100vw;
+  }
+}
+@media (max-width: 480px) {
+  table tr {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    justify-content: center;
+  }
+}
 table tr th {
   padding: 30px 30px;
   height: 70px;
+}
+@media (max-width: 480px) {
+  table tr th {
+    padding: unset;
+    height: unset;
+  }
 }
 table .year-history {
   font-size: 38px;
   font-weight: 800;
 }
+@media (max-width: 480px) {
+  table .year-history {
+    width: 70vw;
+    text-align: center;
+    margin-top: 25px;
+  }
+}
 table .table-txt-history {
   font-size: 18px;
   font-weight: 400;
   text-align: left;
+}
+@media (max-width: 480px) {
+  table .table-txt-history {
+    margin-top: 20px;
+    text-align: center;
+  }
 }
 
 #homeMain {
@@ -236,6 +379,18 @@ table .table-txt-history {
   margin-top: 20px;
   width: 100%;
 }
+@media (max-width: 480px) {
+  #aboutTheArtist .ctangana-yacht {
+    margin-top: unset;
+  }
+}
+@media (max-width: 480px) {
+  #aboutTheArtist {
+    column-gap: unset;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+}
 
 #topHits {
   margin-top: 60px;
@@ -249,11 +404,24 @@ table .table-txt-history {
   justify-content: space-evenly;
   padding: 0px 200px;
 }
+@media (max-width: 480px) {
+  #topHits .top-hits-imgs {
+    flex-wrap: wrap;
+    padding: unset;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 #topHits .top-hits-imgs .cont-top-hits {
   display: flex;
   justify-content: center;
   flex-direction: column;
   position: relative;
+}
+@media (max-width: 480px) {
+  #topHits .top-hits-imgs .cont-top-hits {
+    margin-bottom: 35px;
+  }
 }
 #topHits .top-hits-imgs .cont-top-hits:hover .txt-img-top-hits {
   visibility: visible;
@@ -279,12 +447,22 @@ table .table-txt-history {
   color: #FFFFFF;
   visibility: hidden;
 }
+@media (max-width: 480px) {
+  #topHits .top-hits-imgs .cont-top-hits .txt-img-top-hits {
+    font-size: 26px;
+  }
+}
 #topHits .top-hits-imgs .cont-top-hits .txt-img-top-hits .txt-img-top-hits-margin {
   margin-bottom: 51px;
 }
 
 #titlePhotoGallery {
   margin: 50px 0px 30px 20px;
+}
+@media (max-width: 480px) {
+  #titlePhotoGallery {
+    margin: 40px 0px 30px 20px;
+  }
 }
 
 .gallery-slider-1 {
@@ -318,17 +496,37 @@ table .table-txt-history {
 #newinShopTitle {
   margin: 50px 0px 0px 20px;
 }
+@media (max-width: 480px) {
+  #newinShopTitle {
+    margin: 40px 0px 0px 20px;
+  }
+}
 
 .products-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+@media (max-width: 480px) {
+  .products-container {
+    flex-direction: column;
+  }
+}
 .products-container .products-shop {
   color: #000000;
   border-radius: 14px;
   padding: 20px;
   width: 400px;
+}
+@media (max-width: 480px) {
+  .products-container .products-shop {
+    width: unset;
+  }
+}
+@media (max-width: 480px) {
+  .products-container .products-shop .imgs-shop {
+    width: 100%;
+  }
 }
 .products-container .products-shop .title-product {
   font-size: 20px;

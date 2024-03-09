@@ -15,6 +15,14 @@
     .ctangana-yacht{
         margin-top: 20px;
         width: 100%;
+        @include media-query-mobile(){
+            margin-top: unset;
+        }
+    }
+    @include media-query-mobile(){
+        column-gap: unset;
+        flex-wrap: wrap;
+        margin-top: 50px;
     }
 }
 
@@ -28,11 +36,20 @@
         align-items: center;
         justify-content: space-evenly;
         padding: 0px 200px;
+        @include media-query-mobile(){
+            flex-wrap: wrap;
+            padding: unset;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
         .cont-top-hits{
             display: flex;
             justify-content: center;
             flex-direction: column;
             position: relative;
+            @include media-query-mobile(){
+                margin-bottom: 35px;
+            }
             &:hover .txt-img-top-hits{
                 visibility: visible;
             }
@@ -56,6 +73,9 @@
                 justify-content: end;
                 color: $secondary-color;
                 visibility: hidden;
+                @include media-query-mobile(){
+                    font-size: 26px;
+                }
                 .txt-img-top-hits-margin{
                     margin-bottom: 51px;
                 }

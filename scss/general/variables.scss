@@ -1,3 +1,9 @@
 $primary-color: #FF0606;
 $secondary-color: #FFFFFF;
 $third-color: #000000;
+
+@mixin media-query-mobile{
+    @media (max-width:480px) {
+        @content;
+    }
+}

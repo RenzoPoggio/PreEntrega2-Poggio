@@ -1,5 +1,8 @@
 #titlePhotoGallery{
     margin: 50px 0px 30px 20px;
+    @include media-query-mobile(){
+        margin: 40px 0px 30px 20px;
+    }
 }
 
 .gallery-slider-1{

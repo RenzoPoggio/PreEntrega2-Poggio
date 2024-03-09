@@ -1,16 +1,30 @@
 #newinShopTitle{
     margin: 50px 0px 0px 20px;
+    @include media-query-mobile(){
+        margin: 40px 0px 0px 20px;
+    }
 }
 
 .products-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    @include media-query-mobile(){
+        flex-direction: column;
+    }
     .products-shop{
         color: $third-color;
         border-radius: 14px;
         padding: 20px;
         width: 400px;
+        @include media-query-mobile(){
+            width: unset;
+        }
+        .imgs-shop{
+            @include media-query-mobile(){
+                width: 100%;
+            }
+        }
         .title-product{
             font-size: 20px;
             font-weight: 700;

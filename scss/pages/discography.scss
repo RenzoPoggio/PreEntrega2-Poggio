@@ -11,18 +11,42 @@
     column-gap: 20px;
     align-items: center;
     margin-top: 22px;
+    @include media-query-mobile(){
+        grid-template-areas: 
+        "secfirstgrid secfirstgrid secfirstgrid secfirstgrid secfirstgrid secfirstgrid"
+        "secsecondgrid secsecondgrid secsecondgrid secsecondgrid secsecondgrid secsecondgrid"
+        "elMadrilenioFrameSt elMadrilenioFrameSt elMadrilenioFrameSt elMadrilenioFrameSt elMadrilenioFrameSt elMadrilenioFrameSt"
+        "firstStatsNumbers firstStatsNumbers firstStatsNumbers firstStatsNumbers firstStatsNumbers firstStatsNumbers"
+        "secondStatsNumbers secondStatsNumbers secondStatsNumbers secondStatsNumbers secondStatsNumbers secondStatsNumbers"
+        "thirdStatsNumbers thirdStatsNumbers thirdStatsNumbers thirdStatsNumbers thirdStatsNumbers thirdStatsNumbers"
+        "albumIdolo albumIdolo albumIdolo albumIdolo albumIdolo albumIdolo"
+        "idoloFrameSt idoloFrameSt idoloFrameSt idoloFrameSt idoloFrameSt idoloFrameSt"
+    ;
+        margin-top: 15px;
+        row-gap: 20px;
+        column-gap: unset;
+    }
     #secFirstGrid{
         grid-area: secfirstgrid;
         padding: 0px 20px;
         .popular-albums{
             margin: 25px 0px 80px 0px;
+            @include media-query-mobile(){
+                margin: 25px 0px 25px 0px;
+            }
         }
         .madrilenio-album-txt{
             margin-top: 30px;
+            @include media-query-mobile(){
+                margin-top: 15px;
+            }
         }
     }
     #secSecondGrid{
         grid-area: secsecondgrid;
+        @include media-query-mobile(){
+            margin-bottom: 30px;
+        }
         img{
             width: 100%;
         }
@@ -30,6 +54,15 @@
     #elMadrilenioFrameSt{
         grid-area: elMadrilenioFrameSt;
         padding: 0px 20px;
+        @include media-query-mobile(){
+            margin-bottom: 20px;
+        }
+        iframe{
+            @include media-query-mobile(){
+                width: 100%;
+                height: 75vh;
+            }
+        }
     }
     #firstStatsNumbers{
         grid-area: firstStatsNumbers;
@@ -46,9 +79,19 @@
     #albumIdolo{
         grid-area: albumIdolo;
         padding: 0px 20px;
+        @include media-query-mobile(){
+            margin-top: 18px;
+        }
     }
     #idoloFrameSt{
         grid-area: idoloFrameSt;
+        iframe{
+            @include media-query-mobile(){
+                width: 100%;
+                height: 75vh;
+                padding: 0px 20px;
+            }
+        }
     }
 }
 
