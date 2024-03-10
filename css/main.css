@@ -428,6 +428,7 @@ table .table-txt-history {
 }
 #topHits .top-hits-imgs .cont-top-hits .border-img-tophits {
   border: 2px dashed #FF0606;
+  width: 100%;
 }
 #topHits .top-hits-imgs .cont-top-hits .txt-img-top-hits {
   font-size: 36px;
