@@ -8,6 +8,8 @@
 .products-container{
     display: flex;
     flex-wrap: wrap;
+    width: unset !important;
+    overflow-x: unset !important;
     justify-content: space-around;
     @include media-query-mobile(){
         flex-direction: column;

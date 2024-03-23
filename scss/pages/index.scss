@@ -20,6 +20,8 @@
         }
     }
     @include media-query-mobile(){
+        width: 100vw;
+        overflow-x: hidden;
         column-gap: unset;
         flex-wrap: wrap;
         margin-top: 50px;

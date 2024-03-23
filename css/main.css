@@ -388,6 +388,8 @@ table .table-txt-history {
 }
 @media (max-width: 480px) {
   #aboutTheArtist {
+    width: 100vw;
+    overflow-x: hidden;
     column-gap: unset;
     flex-wrap: wrap;
     margin-top: 50px;
@@ -508,6 +510,8 @@ table .table-txt-history {
 .products-container {
   display: flex;
   flex-wrap: wrap;
+  width: unset !important;
+  overflow-x: unset !important;
   justify-content: space-around;
 }
 @media (max-width: 480px) {
