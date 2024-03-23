@@ -80,6 +80,8 @@ h2 {
 }
 
 body {
+  width: 100vw;
+  overflow-x: hidden;
   background-color: #FAF5EB;
   color: #000000 !important;
   font-family: "Work Sans", sans-serif;
@@ -370,8 +372,6 @@ table .table-txt-history {
 }
 
 #aboutTheArtist {
-  width: 100vw;
-  overflow-x: hidden;
   margin-top: 80px;
   display: flex;
   padding: 0px 20px;
