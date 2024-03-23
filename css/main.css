@@ -370,6 +370,8 @@ table .table-txt-history {
 }
 
 #aboutTheArtist {
+  width: 100vw;
+  overflow-x: hidden;
   margin-top: 80px;
   display: flex;
   padding: 0px 20px;
