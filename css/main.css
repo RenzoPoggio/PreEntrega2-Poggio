@@ -511,6 +511,7 @@ table .table-txt-history {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  overflow-x: hidden;
 }
 @media (max-width: 480px) {
   .products-container {
