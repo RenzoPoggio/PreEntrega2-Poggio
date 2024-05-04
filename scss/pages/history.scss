@@ -3,7 +3,7 @@
     @include media-query-mobile(){
         margin-top: 40px;
     }
-    .row h1{
+    .row h2{
         margin-top: 50px;
         @include media-query-mobile(){
             margin-top: unset;

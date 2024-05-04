@@ -296,11 +296,11 @@ header .navbar-collapse .nav-link:hover {
     margin-top: 40px;
   }
 }
-#historyContGridBoos .row h1 {
+#historyContGridBoos .row h2 {
   margin-top: 50px;
 }
 @media (max-width: 480px) {
-  #historyContGridBoos .row h1 {
+  #historyContGridBoos .row h2 {
     margin-top: unset;
   }
 }
