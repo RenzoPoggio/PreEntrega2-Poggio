@@ -3,22 +3,12 @@
     src: url("../resources/font/Dirtyline\ 36daysoftype\ 2022.ttf");
 }
 
-#titleMain{
-    font-family: "Dirtyline";
-    font-size: 128px;
-    color: $primary-color;
-    font-weight: 400;
-    margin: auto;
-    @include media-query-mobile(){
-        font-size: 64px;
-    }
-}
-
 h1{
     color: $primary-color;
     font-family: "Dirtyline";
     font-size: 128px;
     font-weight: 400;
+    margin: auto;
     @include media-query-mobile(){
         font-size: 64px;
     }
