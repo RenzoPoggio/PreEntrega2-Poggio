@@ -17,6 +17,16 @@
 h1{
     color: $primary-color;
     font-family: "Dirtyline";
+    font-size: 128px;
+    font-weight: 400;
+    @include media-query-mobile(){
+        font-size: 64px;
+    }
+}
+
+h2{
+    color: $primary-color;
+    font-family: "Dirtyline";
     font-size: 76px;
     font-weight: 400;
     @include media-query-mobile(){
@@ -24,7 +34,7 @@ h1{
     }
 }
 
-h2{
+h3{
     color: $primary-color;
     font-family: "Dirtyline";
     font-size: 58px;
